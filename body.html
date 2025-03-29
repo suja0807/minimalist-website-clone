@@ -1,0 +1,333 @@
+<html>
+    <head>
+        <title>
+            Body - Minimalist 
+        </title>
+        <link rel="icon" href="./assets/logo2.avif">
+        <style>
+             .flex-container{
+                    display: flex;
+                    flex-direction: row;
+                    padding: 0px 200px; 
+                    justify-content: space-between; 
+                    align-items: center; 
+                    position: sticky;  
+                    top: 0;
+                    background: white;
+                    z-index: 100;
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                }
+
+                .websitename{
+                 font-family: Verdana, Geneva, Tahoma, sans-serif;
+                }
+
+                .websitename > a{
+                    text-decoration: none;
+                    color: black;
+                }
+
+                .navitems, .icons, .websitename{
+                    cursor: pointer;
+                }
+
+                .navitems{
+                    display: flex;
+                    gap: 25px;
+                    align-items: center;
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                }
+
+                .itemchild{
+                    color: black;
+                    text-decoration: none;
+                }
+
+                .icons{
+                    display: flex;
+                    gap: 15px;
+                    align-items: center;
+                }
+
+                button{
+                    border: none;
+                    cursor: pointer;
+                    background-color: white;
+                }
+
+                .body{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+               align-content: space-evenly;
+               /* padding: 0px; */
+               }
+                
+                .grid-container{
+                display: grid;
+                grid-template-columns: auto auto auto;
+                justify-content: space-evenly;
+                gap: 20px;
+                text-align: center;
+                margin-top: 10px;
+                padding: 20px;
+                cursor: pointer;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+
+            .gridimage{
+                width: 300px;
+                height: auto;
+                border-radius: 10px;
+                transition: transform 0.3s ease; 
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+
+            .gridimage:hover{
+                transform: scale(1.1); 
+            }
+
+            .lighter{
+                    color: dimgrey;
+                }
+
+            .rupees{
+                font-weight: 90%;
+            }
+
+            .addtocart{
+                background-color: black;
+                color: white;
+                cursor: pointer;
+                padding: 10px;
+                border-radius: 8px;
+                transition-duration: 0.4s;
+                font-family: monospace;
+            }
+
+            .addtocart:hover{
+                background-color: lightcoral;
+                color: white;
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            }
+
+            .addtocart:disabled{
+                cursor: not-allowed;
+                opacity: 0.8;
+                background-color: grey;
+            }
+
+            .footer {
+                margin-top: 60px;
+             border-radius: 8px;
+             background: #111;
+             color: #fff;
+             padding: 40px 0;
+             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+           }
+           .container {
+             max-width: 1200px;
+             margin: 0 auto;
+             padding: 0 20px;
+             color: rgba(255, 255, 255, 0.605);
+             
+           }
+           .footerrow {
+             display: flex;
+             justify-content: space-between;
+             flex-wrap: wrap;
+           }
+           .footercol {
+             width: 30%;
+           }
+           .footercol h5 {
+             font-weight: bold;
+             margin-bottom: 15px;
+           }
+           .footercol ul {
+             list-style: none;
+             padding: 0;
+           }
+           .footercol ul li {
+             margin-bottom: 10px;
+           }
+           .socialicons i {
+             margin-right: 15px;
+             font-size: 20px;
+             cursor: pointer;
+           }
+           .footerbottom {
+             text-align: center;
+             margin-top: 20px;
+           }
+
+           .itemchild {
+             color: black;
+              text-decoration: none;
+             }
+
+              .itemchild:hover {
+              text-decoration: underline;
+              text-underline-offset: 10px;
+              }
+
+        </style>
+    </head>
+
+    <body>
+        
+        <div class="flex-container">
+            <div class="websitename"><a href="./minimalist.html"><h1>Minimalist</h1></a></div>
+  
+            <div class="navitems">
+              <div class="item"><a href="#" class="itemchild" target="_blank">Shop</a></div>
+              <div class="item"><a href="#" class="itemchild" target="_blank">Best Sellers</a></div>
+              <div class="item"><a href="skin.html" class="itemchild" target="_blank">Skin Care</a></div>
+              <div class="item"><a href="body.html" class="itemchild" target="_blank">Body Care</a></div>
+              <div class="item"><a href="hair.html" class="itemchild" target="_blank">Hair Care</a></div>
+              <div class="item"><a href="lip.html" class="itemchild" target="_blank">Lip Care</a></div>
+              <div class="item"><a href="#" class="itemchild" target="_blank">Track Order</a></div>
+           </div>
+           
+            <div class="icons">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                        <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1"/>
+                      </svg>
+                </button>
+            </div>
+            <div class="icons">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search-heart" viewBox="0 0 16 16">
+                        <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018"/>
+                        <path d="M13 6.5a6.47 6.47 0 0 1-1.258 3.844q.06.044.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11"/>
+                      </svg>
+                </button>
+            </div>
+            <div class="icons">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-heart" viewBox="0 0 16 16">
+                        <path d="M9 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0m-9 8c0 1 1 1 1 1h10s1 0 1-1-1-4-6-4-6 3-6 4m13.5-8.09c1.387-1.425 4.855 1.07 0 4.277-4.854-3.207-1.387-5.702 0-4.276Z"/>
+                      </svg>
+                </button>
+            </div>
+            <div class="icons" style="align-self: center;">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+                        <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+                      </svg>
+                </button>
+            </div>
+        </div> 
+
+        <div class="body">
+            <h2>Body</h2>
+            <p style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Treat your body from head to toe with our range of science-backed &  efficacious range of body care products. &hearts;</p> 
+        </div>
+
+        <div class="grid-container">
+            <div>
+                <img src="./assets/niacinamidebodylotion.avif" alt="niacinamidebodylotion" class="gridimage">
+                <h3>Niacinamide 5% Body Lotion</h3>
+                <p class="lighter"></p>
+                <p class="rupees">&#8377 299</p> 
+                <button class="addtocart">Add to cart</button>
+            </div>
+            <div>
+                <img src="./assets/nonapeptideunderarmrollon.avif" alt="nonapeptide" class="gridimage">
+                <h3>Nonapeptide + AHA 6% Underarm Roll-On</h3>
+                <p class="lighter">Fades Underarm darkness & Odour</p> 
+                <p class="rupees">&#8377 549</p>  
+                <button class="addtocart">Add to Cart</button>
+            </div>
+            <div>
+                <img src="./assets/salicylicacidbodywash.avif" alt="salicylicbodywash" class="gridimage">
+                <h3>Salicylic Acid + LHA 2% Body Wash</h3>
+                <p class="lighter">Excess Sweat, Body Acne & Rough Skin</p>
+                <p class="rupees">&#8377 349</p> 
+                <button class="addtocart">Add to Cart</button>
+            </div>
+            <div>
+                <img src="./assets/glycolictranexamicbodyexfoliator.avif" alt="bodyexfoliator" class="gridimage">
+                <h3>Glycolic + Tranexamic 11% Body Exfoliator</h3>
+                <p class="lighter">Keratosis Pilaris & Hyperpigmentation</p>
+                <p class="rupees">&#8377 699</p> 
+                <button class="addtocart">Add to Cart</button>
+            </div>
+
+            <div>
+                <img src="./assets/spf30bodylotion.avif" alt="spf30bodylotion" class="gridimage">
+                <h3>SPF 30 Body Lotion</h3>
+                <p class="lighter">Sun protection, UV exposure / damage</p>
+                <p class="rupees">&#8377 </p> 
+                <button class="addtocart">Add to Cart</button>
+            </div>
+            <div>
+                <img src="./assets/hoclskinreliefspray.avif" alt="hoclskinreliefspray" class="gridimage">
+                <h3>HOCL Skin Relief Spray 150 ppm</h3>
+                <p class="lighter">Eczema, Acne, Redness & Damaged Skin Barrier</p>
+                <p>&#8377 399</p>
+                <button class="addtocart">Add to Cart</button>
+            </div>
+            <div>
+                <img src="./assets/bodycarecit.avif" alt="bodycarekit" class="gridimage">
+                <h3>Body Care Kit</h3>
+                <p class="lighter">Odour, Acne, Sebum & Rough Skin</p>
+                <p class="rupees">&#8377 1,049</p> 
+                <button class="addtocart">Add to Cart</button>
+            </div>
+            <div>
+                <img src="./assets/sunprotectionbodycarekit.avif" alt="sunprotectionbodycarekit" class="gridimage">
+                <h3>Sun Protection Body Care Kit</h3>
+                <p class="lighter">UV Damage & Chapped Lips</p>
+                <p class="rupees">&#8377 1,199</p> 
+                <button class="addtocart">Add to Cart</button>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+              <div class="footerrow">
+                <div class="footercol">
+                  <h5>About Us</h5>
+                  <ul>
+                    <li>Our values</li>
+                    <li>Privacy policy</li>
+                    <li>Terms & conditions</li>
+                    <li>Disclaimer</li>
+                    <li>Corporate Information</li>
+                    <li>Media Outreach</li>
+                    <li>Distributor Queries</li>
+                  </ul>
+                </div>
+                <div class="footercol">
+                  <h5>Quick Links</h5>
+                  <ul>
+                    <li>Knowledge</li>
+                    <li>FAQs</li>
+                    <li>Return & refund policy</li>
+                    <li>Track order</li>
+                    <li>Help Center</li>
+                    <li>Download App</li>
+                  </ul>
+                </div>
+                <div class="footercol">
+                  <h5>Contact Us</h5>
+                  <p>Need help fast? Send an email help@beminimalist.co</p>
+                  <div class="socialicons">
+                    <i class="bi bi-envelope"></i>
+                   <i class="bi bi-facebook"></i>
+                  <i class="bi bi-instagram"></i>
+                  <i class="bi bi-youtube"></i>
+                  </div>
+                </div>
+              </div>
+              <hr style="color: rgba(128, 128, 128, 0.463);">
+              <div class="footerbottom">
+                <p>Copyright © 2025 Minimalist.</p>
+              </div>
+            </div>
+          </footer>
+
+    </body>
+</html>
